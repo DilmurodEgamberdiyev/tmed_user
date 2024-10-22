@@ -1,18 +1,16 @@
 import {PropsWithChildren, Suspense} from 'react'
 import {Content} from '@/widgets/layout/ui/docs/organisms'
 import {Loader} from '@/shared'
-import {NewsNavbar} from "@/widgets/layout/ui/news/organisms";
-// import { NewsLayoutWithoutNavbar } from './newsLayoutWithoutNavbar';
 
 type Props = PropsWithChildren & {
-    title: string
+    // title: string
 }
 
-export async function NewsLayout({children, title}: Props) {
+export async function NewsLayoutWithoutNavbar({children}: Props) {
     return (
         <Suspense fallback={<Loader/>}>
             <div className={'container'}>
-                <NewsNavbar title={title}/>
+                {/* <NewsNavbar title={title}/> */}
                 <Content>
                     {children}
                 </Content>

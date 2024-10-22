@@ -47,7 +47,8 @@
     "username": "Имя пользователя",
     "joinToVc": "Присоединение к конференции VC",
     "streamingChat": "Чат",
-    "onlinelibrary": "Онлайн библиотека"
+    "onlinelibrary": "Онлайн библиотека",
+    "mailingAddress": "Почтовый адрес"
   },
   "AboutUs": {
     "aboutInstitution": "О заведении",

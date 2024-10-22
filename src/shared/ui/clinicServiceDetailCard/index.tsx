@@ -4,12 +4,12 @@ import {FC} from "react";
 import {BaseButton} from "@/shared";
 
 type ClinicServiceCardDetailProps = {
-    service: ServiceType
+    service: ServiceType,
 }
 export const ClinicServiceCardDetail: FC<ClinicServiceCardDetailProps> = ({service}) => {
     return (
         <div className={sx.card}>
-            <BaseButton text={`${service.name} (${service.product_count})`}/>
+            <BaseButton text={`${service.name}`}/>
         </div>
     )
 }

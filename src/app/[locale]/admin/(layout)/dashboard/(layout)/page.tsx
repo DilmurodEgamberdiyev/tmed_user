@@ -26,7 +26,7 @@ const DashboardPage = () => {
 
   const handleEdit = (id: string) => {
     getAdministrationEv(id);
-    console.log(administrationDetail);
+    // console.log(administrationDetail);
   };
   const handleDelete = (id: string) => {
     deleteAdministrationEv(id);

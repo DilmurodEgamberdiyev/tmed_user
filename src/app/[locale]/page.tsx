@@ -57,21 +57,21 @@ export default function Home() {
 
         <Grid className={sx.wrap}>
           <p className={"title"}>{t("clinicService")}</p>
-          <Link
+          {/* <Link
             className={sx.link}
             href={`/${locale + AppPathEnum.CLINIC_SERVICE}`}
           >
             <BaseButton text={t("seeAll")} active={true} />
-          </Link>
+          </Link> */}
         </Grid>
 
         <ServiceList />
 
         <Grid className={sx.wrap}>
-          <p className={"title"}>{t("clinicDoctors")} (218)</p>
-          <Link className={sx.link} href={"/"}>
+          <p className={"title"}>{t("clinicDoctors")} </p>
+          {/* <Link className={sx.link} href={"/"}>
             <BaseButton text={t("seeAll")} active={true} />
-          </Link>
+          </Link> */}
         </Grid>
 
         <DoctorList />

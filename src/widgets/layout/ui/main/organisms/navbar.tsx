@@ -19,9 +19,9 @@ export const Navbar = () => {
       <div onClick={() => setBurger(true)} className={sx.burgerOpen}>
         <Icon.Burger />
       </div>
-      <Grid className={sx.mobile + ` ${burger ? sx.active : ''}`} paddingRight={6} display={'flex'}
+      <Grid className={sx.mobile + ` ${burger ? sx.active : ''}`}  display={'flex'}
             alignItems={'center'}
-            justifyContent={'space-between'} item xs={9.9}>
+            justifyContent={'space-between'} item xs={10.5}>
         <div onClick={() => setBurger(false)} className={sx.burgerClose}>
           <Icon.BurgerClose />
         </div>
@@ -92,7 +92,7 @@ export const Navbar = () => {
           <Icon.TmedLogo />
         </div>
       </Grid>
-      <Grid className={sx.profile} item xs={0.6}>
+      {/* <Grid className={sx.profile} item xs={0.6}>
         <Link href={`/${local}${AppPathEnum.ADMIN}`}>
           <BaseButton
             active={true}
@@ -101,7 +101,7 @@ export const Navbar = () => {
                 active={true}
               />} />
         </Link>
-      </Grid>
+      </Grid> */}
       <div onClick={() => setBurger(false)} className={sx.blur}></div>
     </Grid>
   )

@@ -47,7 +47,8 @@
     "username": "Foydalanuvchi nomi",
     "joinToVc": "VC konferentsiyasiga qo'shilish",
     "streamingChat": "Chat",
-    "onlinelibrary": "Online kutubxona"
+    "onlinelibrary": "Online kutubxona",
+    "mailingAddress": "Pochta manzili"
   },
   "AboutUs": {
     "aboutInstitution": "Muassasa haqida",

@@ -34,16 +34,16 @@ export async function NewsNavbar({ title }: Props) {
           <BaseButton text={"News"} />
         </Link> */}
         <Link
-          className={`${sx.myBtn} ${NavLink.isActiveLink(`/${locale + AppPathEnum.NEWS + AppPathEnum.POST}`) ? sx.active : ""}`}
-          href={`/${locale + AppPathEnum.NEWS + AppPathEnum.POST}`}
-        >
-          <BaseButton text={tr('posts')} />
-        </Link>
-        <Link
           className={`${sx.myBtn} ${NavLink.isActiveLink(`/${locale + AppPathEnum.NEWS + AppPathEnum.KNOWLEDGE}`) ? sx.active : ""}`}
           href={`/${locale + AppPathEnum.NEWS + AppPathEnum.KNOWLEDGE}`}
         >
           <BaseButton text={trNews('usefulInfo')} />
+        </Link>
+        <Link
+          className={`${sx.myBtn} ${NavLink.isActiveLink(`/${locale + AppPathEnum.NEWS + AppPathEnum.POST}`) ? sx.active : ""}`}
+          href={`/${locale + AppPathEnum.NEWS + AppPathEnum.POST}`}
+        >
+          <BaseButton text={tr('posts')} />
         </Link>
       </div>
     </div>

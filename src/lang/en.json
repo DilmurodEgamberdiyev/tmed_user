@@ -47,7 +47,8 @@
     "username": "Username",
     "joinToVc": "Join the VC conference",
     "streamingChat": "Streaming chat",
-    "onlinelibrary": "Online library"
+    "onlinelibrary": "Online library",
+    "mailingAddress": "Mailing address"
   },
   "AboutUs": {
     "aboutInstitution": "About the institution",

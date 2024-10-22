@@ -4,9 +4,20 @@
   padding: 0 15px;
 
   .cardGrid {
-
     div {
       background-color: var(--twed-light-grey);
+    }
+  }
+
+  .cards {
+    background-color: var(--twed-light-grey);
+    cursor: default;
+
+    p {
+      width: 100%;
+      // text-overflow: ellipsis;
+      // overflow: hidden;
+      // text-align: center;
     }
   }
 
@@ -23,8 +34,8 @@
   }
 
   .gridWrap {
-
-    @media(max-width: 1200px) {
+    // width: 32.2% !important;
+    @media (max-width: 1200px) {
       max-width: 100%;
     }
   }
@@ -46,10 +57,9 @@
         font-size: 16px;
         line-height: 24px;
       }
-
     }
 
-    @media(max-width: 1200px) {
+    @media (max-width: 1200px) {
       width: 300px;
       max-width: 100%;
     }
@@ -85,7 +95,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-top: 8px
+      margin-top: 8px;
     }
 
     h3 {
@@ -96,13 +106,14 @@
     }
   }
 
-  @media(max-width: 992px) {
+  @media (max-width: 992px) {
     flex-wrap: nowrap !important;
     width: 100%;
     overflow-y: auto;
     margin-bottom: 12px;
 
-    &::-webkit-scrollbar-track, &::-webkit-scrollbar {
+    &::-webkit-scrollbar-track,
+    &::-webkit-scrollbar {
       height: 0;
       background: silver;
     }

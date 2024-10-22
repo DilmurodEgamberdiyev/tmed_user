@@ -1,13 +1,12 @@
 .doctorList {
   margin-bottom: 55px;
 
-
   .cards {
     background: #F3F5F9;
     border-radius: 12px;
     display: flex;
     padding: 12px;
-    margin-bottom: 16px;
+    margin-bottom: 0 !important;
 
     @media(max-width: 1200px) {
       width: 340px;

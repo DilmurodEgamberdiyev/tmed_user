@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root {
-  --font: "Inter", sans-serif;
+  --font: 'Inter', sans-serif;
   --common-bg-color: #ffffff;
   --twed-dark: #222222;
   --twed-light-dark: #7f92a0;
@@ -205,7 +205,8 @@ p {
   border-radius: 8px;
   width: 100%;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
+  resize: none;
 
   &:focus {
     border-color: #007aff;
@@ -250,8 +251,43 @@ p {
 }
 
 .css-1086bdv-MuiPaper-root-MuiAccordion-root {
-
   &::before {
     display: none;
+  }
+}
+
+.clinicSwiper {
+  .swiper-slide {
+    width: fit-content !important;
+  }
+}
+
+.serviceSwiper {
+  .swiper-slide {
+    height: auto;
+
+    .cards {
+      height: 100%;
+    }
+  }
+}
+
+.swiper-button-next , .swiper-button-prev{
+  background: #dedede;
+  padding: 10px;
+  border-radius: 50%;
+  width: 23px !important;
+  height: 23px !important;
+  opacity: 0.7 !important;
+  transition: all .2s ease-in;
+
+  &:hover {
+    opacity: 1 !important;
+  }
+
+  &::after {
+    font-size: 17px !important;
+    color: #000;
+    font-weight: 900;
   }
 }

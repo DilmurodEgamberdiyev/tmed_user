@@ -15,6 +15,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { TimeFormatter } from "@/shared";
+import { NewsLayoutWithoutNavbar } from "@/widgets/layout/ui/news/newsLayoutWithoutNavbar";
 
 export default function InfoDetail() {
   const t = useTranslations("News");
@@ -27,7 +28,7 @@ export default function InfoDetail() {
   }, [params.id]);
 
   return (
-    <NewsLayout title={t("usefulInfo")}>
+    <NewsLayoutWithoutNavbar>
       <Box sx={sx}>
       <h1>{results?.title}</h1>
         <div className="image">
@@ -87,7 +88,7 @@ export default function InfoDetail() {
           </Swiper>
         )}
       </Box>
-    </NewsLayout>
+    </NewsLayoutWithoutNavbar>
   );
 }
 

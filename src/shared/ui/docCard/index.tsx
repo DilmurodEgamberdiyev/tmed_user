@@ -25,8 +25,8 @@ export function DocCard({
     <div className={sx.card}>
       <a
         href={image}
-        target="_blank"
-        rel="noopener noreferrer"
+        // target="_blank"
+        // rel="noopener noreferrer"
         download
         className={sx.wrap}
       >
@@ -37,7 +37,7 @@ export function DocCard({
         <a href={image} className={sx.mobileDownload}>
           <Icon.Download /> <span>{t("download")}</span>
         </a>
-        <a target="_blank" href={link ? String(link) : "#"} className={sx.btn}>
+        <a href={link ? String(link) : "#"} className={sx.btn}>
           <BaseButton text={t("link")} icon={<Icon.World />} active={true} />
         </a>
 

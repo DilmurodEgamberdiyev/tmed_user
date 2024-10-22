@@ -7,7 +7,6 @@ import {
   $administrationDetail,
   $administrationList,
   AdminEnum,
-  AdminTypes,
   fetchInfinityAdministrationFx,
   getInfiniteAdministrationEv,
 } from "@/entities";
